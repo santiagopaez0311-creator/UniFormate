@@ -1,0 +1,25 @@
+[hidden]{display:none!important}
+main.page{padding:40px 0;min-height:60vh}
+.user-chip{color:#fff;font-size:13px;align-self:center;background:rgba(0,0,0,.2);padding:5px 10px;border-radius:20px}
+.header-actions{align-items:center}
+.btn-sm{padding:7px 12px;font-size:13px}
+.btn-light{background:#eee;color:#333}.btn-light:hover{background:#ddd}
+.btn-danger{background:#b00020}.btn-danger:hover{background:#80001a}
+.header .btn-light{background:#fff;color:#008f39}
+.form-group select{width:100%;padding:10px;border:1px solid #ccc;border-radius:5px;font-size:14px}
+.login-wrap{min-height:100vh;display:grid;place-items:center;background:#e8f5e9;padding:20px}
+.login-box{background:#fff;border-radius:12px;padding:30px;width:100%;max-width:420px;box-shadow:0 5px 20px rgba(0,0,0,.1)}
+.login-box h1{color:#008f39;font-size:26px;margin-bottom:5px}
+.demo{margin-top:20px;font-size:13px;color:#555}
+.demo button{margin:4px 4px 0 0}
+.welcome{background:#e8f5e9;border-radius:12px;padding:25px;margin-top:30px}
+.welcome .btn{margin:8px 8px 0 0}
+.crud{background:#fff;border:1px solid #ddd;border-radius:10px;padding:20px;margin-top:20px}
+.crud-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.crud-form{background:#f5f5f5;padding:15px;border-radius:8px;margin-bottom:15px}
+.acts{white-space:nowrap}.acts .btn{margin-right:4px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}
+.tabs .btn-light.on{background:#008f39;color:#fff}
+.uni-list{list-style:none;margin:10px 0;font-size:14px}
+.uni-list li{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px dashed #ddd}
+.page-title{font-size:28px;margin-bottom:8px}
