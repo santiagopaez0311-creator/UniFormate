@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Reseñas - UniFormate</title>
+<script>document.documentElement.dataset.theme=localStorage.getItem('uf_theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="roles.css"></head>
+<link rel="stylesheet" href="css/styles.css"></head>
 <body data-page="resenas"><main class="page"><div class="container">
-<div class="subheading">RESEÑAS</div><h1 class="page-title">RESEÑAS DE LOS APRENDICES</h1><div id="crud"></div>
-</div></main><script src="app.js"></script></body></html>
+<div class="subheading">RESEÑAS</div><h1 class="page-title">OPINIONES DE LOS APRENDICES</h1>
+<div class="review-form-box" id="form-box"><h3>Deja tu reseña</h3><div id="form-feedback" class="form-feedback" role="alert"></div>
+<form id="review-form" novalidate>
+<div class="form-group"><label for="r-emp">Empresa</label><select id="r-emp"></select></div>
+<div class="form-group"><span class="label-text">Tu calificación</span><div class="star-rating" role="radiogroup" aria-label="Calificación en estrellas"><input type="radio" id="star5" name="star" value="5"><label for="star5" title="5 estrellas">★</label><input type="radio" id="star4" name="star" value="4"><label for="star4" title="4 estrellas">★</label><input type="radio" id="star3" name="star" value="3"><label for="star3" title="3 estrellas">★</label><input type="radio" id="star2" name="star" value="2"><label for="star2" title="2 estrellas">★</label><input type="radio" id="star1" name="star" value="1"><label for="star1" title="1 estrella">★</label></div></div>
+<div class="form-group"><label for="r-txt">Comentario sobre la tela y la atención</label><textarea id="r-txt" rows="3"></textarea></div>
+<div class="form-group"><label for="r-foto">Foto (opcional)</label><input type="file" id="r-foto" accept="image/*"></div>
+<span class="error-message" id="r-err" role="alert"></span>
+<button class="btn btn-primary">Enviar reseña</button></form></div>
+<div class="filters"><select id="fil" aria-label="Filtrar por empresa"></select></div><div class="review-cards" id="cards"></div>
+</div></main><script src="js/main.js"></script></body></html>
+ 

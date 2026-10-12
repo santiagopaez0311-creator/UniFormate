@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Inicio - UniFormate</title>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Catálogo - UniFormate</title>
+<script>document.documentElement.dataset.theme=localStorage.getItem('uf_theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="roles.css"></head>
+<link rel="stylesheet" href="css/styles.css"></head>
 <body data-page="index"><main class="page"><div class="container">
-<section class="hero"><div class="hero-grid"><div class="hero-content"><div class="tagline">COMPARA, ELIGE, VISTE TU FUTURO</div><h1>UNIFORMES DEL SENA EN UN SOLO LUGAR</h1><p>En UniFormate puedes comparar diferentes empresas que venden uniformes del SENA. Mira sus precios, diseños, ubicaciones y calificaciones.</p><a href="empresas.html" class="btn btn-primary">Ver empresas <i class="fa-solid fa-arrow-right"></i></a></div><div class="hero-media"><img src="imagenes/inicio-uniformate.png" alt="Aprendices SENA"></div></div></section><div class="welcome" id="welcome"></div>
-</div></main><script src="app.js"></script></body></html>
+<section class="hero"><div class="hero-grid"><div class="hero-content"><div class="tagline">COMPARA, ELIGE, VISTE TU FUTURO</div><h1>UNIFORMES DEL SENA EN UN SOLO LUGAR</h1><p>Compara empresas que venden uniformes del SENA: precios, telas, tiempos de entrega, ubicaciones y calificaciones.</p></div><div class="hero-media"><img src="img/inicio-uniformate.png" alt="Aprendices SENA"></div></div></section>
+<div class="welcome" id="welcome"></div>
+<div class="filters"><input type="search" id="q" placeholder="Buscar: botas, overol, bata..." aria-label="Buscar uniformes"><select id="prog" aria-label="Filtrar por programa"><option value="">Todos los programas</option><option>ADSO</option><option>Salud</option><option>Mantenimiento</option><option>General</option></select></div>
+<div class="welcome" id="cmp-bar" hidden></div>
+<div class="company-grid" id="lista"></div>
+</div></main><script src="js/main.js"></script></body></html>
